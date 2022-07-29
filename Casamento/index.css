@@ -12,8 +12,6 @@
          url('../fonts/cinzel-decorative-v14-latin-regular.svg#CinzelDecorative') format('svg'); /* Legacy iOS */
   }
 
-
-
 .background{
     background: linear-gradient( #f3f2f1 50%,black);
 }
@@ -21,12 +19,18 @@
 .cabecalho{
     display: flex;
     justify-content: center;
+    opacity: 0.8;
+    background: linear-gradient(black 80%, #f3f2f1) ;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
    
-    
 }
+
 .cabecalho-item{
     font-size: 14px;
-    color: #284135;
+    color: #f3f2f1;
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bold;
@@ -39,6 +43,8 @@
     align-items: center;
     justify-content: center;
     height: 500px;
+    padding: 15px;
+   
     
 
 
