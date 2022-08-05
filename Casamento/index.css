@@ -12,49 +12,72 @@
          url('../fonts/cinzel-decorative-v14-latin-regular.svg#CinzelDecorative') format('svg'); /* Legacy iOS */
   }
 
-.background{
-    background: linear-gradient( #f3f2f1 50%,black);
-}
+
+
+
 
 .cabecalho{
+    background-color: #76BA99;
+
+   /* background: #355764; padrão 2*/
+   /* background: linear-gradient(black 80%, #f1f2f3); padrão 1*/
     display: flex;
-    justify-content: center;
-    opacity: 0.8;
-    background: linear-gradient(black 80%, #f3f2f1) ;
-    padding-top: 5px;
+    justify-content:space-around;
+   /* opacity: 1;
+     background: linear-gradient(black 80%, #f3f2f1) ;*/
+   /* background-image: linear-gradient(5deg, #56696c 0, #515e60 16.67%, #4a5050 33.33%, #403e3e 50%, #362d2e 66.67%, #2e2022 83.33%, #27171b 100%);
+    */padding-top: 5px;
     padding-bottom: 10px;
-    position: fixed;
     width: 100%;
+    position: absolute;
+    
    
 }
 
 .cabecalho-item{
-    font-size: 14px;
-    color: #f3f2f1;
+    font-size: 19px;
+     /*color: #f3f2f1;*/
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bold;
+    text-transform: uppercase;
    
 }
 
-.principal{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    padding: 15px;
+.main{
+    background: #76BA99;
+    background-color: #76BA99;
+    opacity: 1;
+    background-image:  radial-gradient(#ffffff 2px, transparent 2px), radial-gradient(#ffffff 2px, #76BA99 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+    /*background: #5A8F7B; padrão 2*/
+    /*background: linear-gradient( #f3f2f1 80%,black); padrão 1*/
+    /*background: linear-gradient( #fdf5e6 80%,black);*/
+   /* background-image: radial-gradient(circle at 50% 50%, #9ccd00 0, #87d100 12.5%, #6ed400 25%, #4fd70e 37.5%, #14da30 50%, #00dc47 62.5%, #00de5c 75%, #00e06f 87.5%, #00e183 100%);
+   */
    
+}
+
+
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
     
-
-
-
+   
 }
 
 
 
 .titulo-principal{
-    font-size: 100px;
+    background: #76BA99;
+    color: white;
+    font-size: 76px;
     font-weight: bold;
     text-transform: uppercase;
     
@@ -63,13 +86,110 @@
 }
 
 
-.rodape{
-    color: #f3f2f1;
+
+.fa-solid{
+    font-size: 30px;
+}
+
+.fa-address-book{
+    transform: scaleX(-1);
+}
+
+.referencias{
+     /* background-image: linear-gradient(5deg, #56696c 0, #515e60 16.67%, #4a5050 33.33%, #403e3e 50%, #362d2e 66.67%, #2e2022 83.33%, #27171b 100%); padrão 1*/
+    background: #876445;
+    color: white;
+    padding-bottom: 100px;
+   
+}
+
+.texto-referencias{
+    font-size: 48px;
+   
+}
+
+.quem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.texto-quem{
+    padding: 10px;
+}
+
+.referencias p{
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+
+.underline{
+    width: 80px;
+    border-bottom: 3px solid white;
+    
+    
+}
+
+.quando-onde{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.quando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 150px;
+   
+}
+
+.onde{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.texto-quando{
+   padding: 10px;
+}
+
+.texto-onde{
+    padding: 10px;
+}
+
+
+
+
+
+.rodape{   
+
     display: flex;
     justify-content: center;
+    background: #876445;
+    padding-top: 100px;
+   /* background: #FFEA11; padrão 2*/
+
+   /* background-image: linear-gradient(135deg, #747178 0, #6c696e 16.67%, #616061 33.33%, #535553 50%, #444a46 66.67%, #38423c 83.33%, #2f3c35 100%);*/
 }
 
 .nota-rodape{
+    /*color: #f3f2f1; padrão 1*/
+    color: white;
+    font-weight: bold;
     padding: 30px;
     font-size: 20px;
+    
 }
+
