@@ -27,7 +27,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: black;
+    background-color: 	#696969;
 
 }
 
@@ -82,6 +82,7 @@ html{
     background-image:  radial-gradient(#ffffff 2px, transparent 2px), radial-gradient(#ffffff 2px, #76BA99 2px);
     background-size: 80px 80px;
     background-position: 0 0,40px 40px;
+    
   
    
 }
@@ -105,9 +106,73 @@ html{
     font-size: 76px;
     font-weight: bold;
     text-transform: uppercase;
+
+}
+
+.nossa-historia h3{
+    font-family: 'Alex Brush', cursive;
+    font-size: 30px;
+    font-weight: 400;
+  
+}
+
+.container-nossa-historia{
+    display: flex;
+
+}
+
+.box-nossa-historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2em;
+
     
+}
+
+.box-imagem{
+    display: flex;
+    justify-content: center;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px 0;
+    
+}
+
+.nossa-historia img{
+    transition: 1s;
+}
+
+.texto{
+    padding-bottom: 2em;
+}
+
+.box-nossa-historia span{
+    color: #13b9b9;
+}
+
+.fa-heart{
+    font-size: 10px;
+}
+
+.nossa-historia .titulo-principal{
+    font-size: 2em;
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    font-weight: 200;
+    padding: 1em 0;
+
+}
+
+
+.box-imagem:hover img{
+   transform: scale(1.2);
    
-    
 }
 
 
