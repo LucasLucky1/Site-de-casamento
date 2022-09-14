@@ -177,31 +177,214 @@ html{
 }
 
 .nossa-historia{
-    height: 100vh;
+    
     background: white;
-    /* background: #FFDCAE;  */
     color: black;
+    position: relative;
+    
    
 }
 
-
+ 
   
 .nossa-historia .titulo-principal{
-      font-size: 3em;
+      font-size: 3.5em;
       font-family: 'Alex Brush', cursive;
       color: black;
       text-align: center;
       font-weight: 200;
-      padding-top: 20px;
-      padding-bottom: 30px;
+      padding-top: 2em;
+      padding-bottom: 2em;
       text-transform: none ;
       background: white;
       
-      
-      
-     
-  
 }
+
+.timeline-icon-cima{
+    width: 10px;
+    height: 10px;
+    background: #76BA99;
+    
+    border: 5px solid #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+    left: 49.4%;
+    
+    top: 12%;
+    z-index: 2;
+}
+
+.box-nossa-historia-1{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    text-align: center;
+    
+
+  
+
+}
+
+.box-imagem-esquerda{
+    
+    display: flex;
+    justify-content: center;
+    width: 266px;
+    height: 200px;
+   
+    
+   
+}
+.box-imagem-direita{
+    display: flex;
+    justify-content: center;
+    width: 266px;
+    height: 200px;
+    
+}
+
+
+.nossa-historia img{
+    transition: 1s;
+}
+.background-timeline-icones{
+   
+    align-self: center;
+    justify-self: center;
+    background: #eeeeee;
+    transition: 0.8s ;
+    border: 10px solid #eeeeee;
+    border-radius: 50%;
+    z-index: 2;
+    
+    
+}
+
+
+.background-timeline-icones:hover{
+     transform: rotateY(360deg) scale(1.2);
+}
+
+
+
+.descricao-direita{
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+
+
+.descricao-esquerda{
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+    align-items:flex-start;
+    
+}
+
+
+
+.descricao-direita h3, .descricao-esquerda h3{
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+.texto{
+    padding-bottom: 2em;
+    font-family: "poppins", sans-serif;
+    font-size: 0.90em;
+    
+
+
+}
+
+.data{
+    color: #76BA99;
+}
+
+.box-nossa-historia-2{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-around;
+  
+
+}
+.box-nossa-historia-3{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-around;
+  
+
+}
+.box-nossa-historia-4{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-around;
+  
+
+}
+.box-nossa-historia-5{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 100px;
+    justify-content: space-around;
+  
+
+}
+
+.timeline{
+    background: #eeeeee;
+    height: 96.5vw;
+    
+    border: 2px solid transparent;
+    position: absolute;
+    left: 49.9%;
+    top: 13%;
+    z-index: 1;
+}
+
+.timeline-icon-baixo{
+    width: 10px;
+    height: 10px;
+    background: #76BA99;
+    
+    border: 5px solid #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+    left: 49.4%;
+    bottom: 3%;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+.box-imagem:hover img{
+   transform: scale(1.2) ;
+}
+
+
+   /*   
+   
+  
+
   
 .timeline{
       
@@ -232,23 +415,8 @@ html{
 }
 
   
-.box-nossa-historia-1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: flex-start;
-      text-align: center;
-      
-         
-}
-
-.texto{
-    padding-bottom: 2em;
-    font-family: "poppins", sans-serif;
-    font-size: 0.90em;
 
 
-}
 
 
 .span-cima-timeline{
@@ -316,7 +484,7 @@ html{
      
 }
   
-.box-nossa-historia-5{
+ .box-nossa-historia-5{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -324,7 +492,7 @@ html{
       text-align: center;
       
       
-}
+} 
   
 .box-imagem{
       display: flex;
@@ -347,8 +515,8 @@ html{
      transform: scale(1.2) ;
      
 }
-  
-  
+   
+   */
 
 
 
