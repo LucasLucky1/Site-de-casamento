@@ -21,33 +21,61 @@ html{
 .cabecalho{
     
     
-    display: flex;
+    display:flex;
     justify-content:space-around;
+
     padding-top: 5px;
     padding-bottom: 10px;
-    width: 100%;
-    position:absolute;
+    width: 98%;
+
+    
+    margin-left: 2%;
+    position:fixed;
+
     font-family: "poppins", sans-serif;
+    
+    z-index: 5;
+
+   
+    
+
+    
+
+    
+
+    
+
+   
+   
+    
+
+    
+
+
        
 }
 
 .cabecalho-item{
     font-size: 17px;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s;
+    
+    
 
    
 }
 
 .cabecalho-item:hover {
     transform: scale(1.1);
-    background: white;
+    border-bottom: 1px solid black;
+    
+    /* background: rgb(89, 88, 88);
     border-radius: 20px;
-    color: #2F4F4F;
+    color: white; */
     
 
    
@@ -56,14 +84,17 @@ html{
 
 
 .main{
-    background-color: #76BA99;
+    /* background-color: #76BA99;
     opacity: 1;
     background-image:  radial-gradient(#ffffff 2px, transparent 2px), radial-gradient(#ffffff 2px, #76BA99 2px);
     background-size: 80px 80px;
-    background-position: 0 0,40px 40px;
+    background-position: 0 0,40px 40px; */
     
+  background-image: url(img/125A1848.jpg);
+  background-size: cover;
+  background-position: 0 -100px;
   
-   
+
 }
 
 
@@ -80,15 +111,25 @@ html{
 
 
 .titulo-principal{
-    background: #76BA99;
+    /* background: #76BA99; */
     color: white;
     font-size: 9em;
     font-family: 'Alex Brush', cursive;
+    padding-top: 90px;
     
 
 }
 
 
+.referencias{
+    
+    background: rgb(238, 243, 241);
+    color: black;
+    min-height: 100vh;
+
+   
+   
+}
 
 .fa-solid{
     font-size: 30px;
@@ -96,16 +137,6 @@ html{
 
 .fa-address-book{
     transform: scaleX(-1);
-}
-
-.referencias{
-    
-    background: white;
-    color: black;
-    min-height: 100vh;
-
-   
-   
 }
 
 .texto-referencias{
@@ -394,24 +425,41 @@ html{
 }
 
 .padrinhos{
+    height: 100vh;
     
 }
 
 .padrinhos .titulo-principal{
-font-size: 3.5em;
-font-family: 'Alex Brush', cursive;
-color: black;
-text-align: center;
-font-weight: 200;
-padding-top: 2em;
-padding-bottom: 2em;
-text-transform: none ;
-background: white;
+    font-size: 3.5em;
+    font-family: 'Alex Brush', cursive;
+    color: black;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-transform: none ;
+    background: white;
 }
+
+.slides{
+    height: 60vh;
+    border: 2px solid black;
+    width: 60vw;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+   
+}
+
+
 
 .divisao-padrinhos-duplo{
     display: flex;
-    width: 60vw;
+    width: 40vw;
     justify-content: space-around;
     height: 20vh;
     margin: auto;
@@ -419,9 +467,11 @@ background: white;
 
 }
 
+
+
 .divisao-padrinhos-triplo{
     display: flex;
-    width: 80vw;
+    width: 60vw;
     justify-content: space-around;
     height: 20vh;
     margin: auto;
@@ -436,157 +486,148 @@ background: white;
     border: 2px solid black;
     border-radius: 50%;
 
-    height: 100px;
-    width: 100px;
+    width: 150px;
+    height: 150px;
 
+    position: relative;
+}
 
-
+.bloco-padrinhos-1, .bloco-padrinhos-2, .bloco-padrinhos-3, .bloco-padrinhos-4{
+    transition: 1s;
 
 }
 
-   /*   
-   
-  
-
-  
-.timeline{
-      
-      position: absolute;
-      width: 80vw;
-      left: 11.5vw;
-      background: #eeeeee;
-      height: 3px;
-      
-}
-  
-.nossa-historia h3{
-      font-family: 'Alex Brush', cursive;
-      font-size: 30px;
-      font-weight: 400;
-      padding: 10px;
-     
+.bloco-padrinhos-1{
+    background-color: red;
     
-}
-  
-.container-nossa-historia{
-      display: flex;
-      height: 85%;
-      align-items: center;
-      margin: auto; 
-      position: relative;
-        
-}
-
-  
-
-
-
-
-.span-cima-timeline{
-    order: 5;
-    padding-top: 2em;
-}
-
-
-
-.background-timeline-icones{
-    background: #eeeeee;
-    position: absolute;
-    top: 45.5%;
-    padding: 10px;
-    border-radius: 50%;
     
-    transition: 0.8s ;
-    
-
-}
-
-.background-timeline-icones:hover{
-     transform: rotateY(360deg) scale(1.2);
-}
-
-
-
-
-.box-nossa-historia-2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: flex-end;
-      text-align: center;
-      
-}
-
-.span-baixo-timeline{
-    order: -1;
-}
-
-
-  
-.box-nossa-historia-3{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: flex-start;
-      text-align: center;
-      
-}
-  
-.box-nossa-historia-3 h3{
-      display: flex;
-      align-items: center;
-}
-  
-
-.box-nossa-historia-4{
-     display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: flex-end;
-      text-align: center;
-     
-}
-  
- .box-nossa-historia-5{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: flex-start;
-      text-align: center;
-      
-      
 } 
-  
-.box-imagem{
-      display: flex;
-      justify-content: center;
-      border: 4px solid transparent;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      overflow: hidden;  
+
+.bloco-padrinhos-2{
+    background: blue;
 }
-  
-.nossa-historia img{
-      transition: 1s;
+
+.bloco-padrinhos-3{
+    background: #76BA99;
+} 
+
+.bloco-padrinhos-4{
+    background: #696969;
 }
-  
- 
-  
-  
-.box-imagem:hover img{
-     transform: scale(1.2) ;
-     
-}
+.oculto{
+    display: none;
    
-   */
+}
 
 
+/* 
+
+.botoes-slide{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    
+    align-self: bottom;
+    
+   
+   
+}
+
+
+.fa-square{
+    padding: 0 2px;
+    transition: 0.4s;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #fff;
+
+    
+}
+
+
+
+.fa-square:hover{
+    transform:  scale(1.2);
+    color: black;
+    
+}
+
+.fa-square:active{
+    transform:  scale(1.0);
+    color: black;
+    
+} */
+
+.swiper {
+    width: 50%;
+    height: 50%;
+    color: #76BA99,;
+  }
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after{
+    color: black;
+  }
+
+  .swiper-slide{
+    display: block;
+  }
+
+  .swiper-padrinhos-cima{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .swiper-padrinhos-baixo{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .swiper-pagination{
+    display: none;
+  }
 
 .rodape{   
     /* background: #FFDCAE;  */
     display: flex;
     justify-content: center;
+    padding-top: 200px;
 }
 
 .nota-rodape{
@@ -594,7 +635,14 @@ background: white;
     color: black;
     font-weight: bold;
     font-size: 20px;
+
+    padding-top: 200px;
     padding-bottom: 20px;
     
 }
 
+
+
+
+
+   
