@@ -28,14 +28,14 @@ html{
     padding-bottom: 10px;
     width: 100%;
     padding-left: 1%;
-    border-bottom: 1px solid black;
+    
     position:fixed;
 
     font-family: "poppins", sans-serif;
     
     z-index: 5;
 
-    transition: 0.7s;
+    transition: 0.4s;
        
 }
 
@@ -46,7 +46,9 @@ html{
     padding: 10px 20px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.4s;
+
+    border-bottom: 2px solid black;
     
     
 
@@ -56,14 +58,22 @@ html{
 .cabecalho-item:hover {
     transform: scale(1.1);
     color:#47715d;
+    border-color: #47715d;
     /* border-bottom: 1px solid black; */
     
     /* background: black;
     border-radius: 20px;
     color: white; */
     
+}
 
-   
+.cabecalho-item-move{
+    border: none;
+}
+
+.cabecalho-move{
+    border-bottom: solid 1px black;
+    background: white;
 }
 
 
@@ -133,7 +143,7 @@ html{
    
 }
 
-.quem{
+.onde{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +170,7 @@ html{
     
 }
 
-.quando-onde{
+.quando-quem{
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -179,7 +189,7 @@ html{
    
 }
 
-.onde{
+.quem{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -217,6 +227,7 @@ html{
 
 .link:hover{
    transform: scale(1.05);
+   
 }
 
 .nossa-historia{
@@ -520,25 +531,15 @@ html{
 
 .box-padrinhos img:hover{
     -webkit-filter: grayscale(1);
+    filter: (1);
     
 }
-
-.box-padrinhos h3{
-    position: absolute;
-   
-}
-
-
 
 
 .oculto{
     display: none;
 }
 
-.teste{
-    border-bottom: solid 1px black;
-    background: white;
-}
 
 
 
@@ -625,6 +626,3 @@ html{
 
 
 
-
-
-   

@@ -17,6 +17,13 @@ var swiper = new Swiper(".mySwiper", {
   
   window.addEventListener('scroll', function(){
     var cabecalho = document.querySelector('.cabecalho');
-    cabecalho.classList.toggle("teste", window.scrollY > 100);
+    cabecalho.classList.toggle("cabecalho-move", window.scrollY > 100);
+    var cabecalhoItens = document.querySelectorAll('.cabecalho-item');
+    cabecalhoItens[0].classList.toggle("cabecalho-item-move", window.scrollY > 100);
+    cabecalhoItens[1].classList.toggle("cabecalho-item-move", window.scrollY > 100);
+    cabecalhoItens[2].classList.toggle("cabecalho-item-move", window.scrollY > 100);
+    cabecalhoItens[3].classList.toggle("cabecalho-item-move", window.scrollY > 100);
+    cabecalhoItens[4].classList.toggle("cabecalho-item-move", window.scrollY > 100);
+    
 
   })
