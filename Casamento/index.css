@@ -57,8 +57,8 @@ html{
 
 .cabecalho-item:hover {
     transform: scale(1.1);
-    color:#47715d;
-    border-color: #47715d;
+    
+    
     /* border-bottom: 1px solid black; */
     
     /* background: black;
@@ -69,6 +69,16 @@ html{
 
 .cabecalho-item-move{
     border: none;
+}
+
+
+.cabecalho-item-move:hover{
+    color:#47715d;
+    
+}
+
+.ativo{
+    color:#47715d;  
 }
 
 .cabecalho-move{
