@@ -26,32 +26,16 @@ html{
 
     padding-top: 5px;
     padding-bottom: 10px;
-    width: 98%;
-
-    
-    margin-left: 2%;
+    width: 100%;
+    padding-left: 1%;
+    border-bottom: 1px solid black;
     position:fixed;
 
     font-family: "poppins", sans-serif;
     
     z-index: 5;
 
-   
-    
-
-    
-
-    
-
-    
-
-   
-   
-    
-
-    
-
-
+    transition: 0.7s;
        
 }
 
@@ -71,9 +55,10 @@ html{
 
 .cabecalho-item:hover {
     transform: scale(1.1);
-    border-bottom: 1px solid black;
+    color:#47715d;
+    /* border-bottom: 1px solid black; */
     
-    /* background: rgb(89, 88, 88);
+    /* background: black;
     border-radius: 20px;
     color: white; */
     
@@ -90,10 +75,9 @@ html{
     background-size: 80px 80px;
     background-position: 0 0,40px 40px; */
     
-  background-image: url(img/125A1848.jpg);
+  background-image: url(img/main-background.jpg);
   background-size: cover;
-  background-position: 0 -100px;
-  
+  background-repeat:no-repeat;
 
 }
 
@@ -115,9 +99,13 @@ html{
     color: white;
     font-size: 9em;
     font-family: 'Alex Brush', cursive;
-    padding-top: 90px;
+    padding-top: 210px;
     
 
+}
+
+.titulo-principal::selection{
+    background: transparent;
 }
 
 
@@ -196,7 +184,7 @@ html{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 0 150px;
+    padding: 20px 150px;
 }
 
 .texto-quando{
@@ -205,6 +193,30 @@ html{
 
 .texto-onde{
     padding: 10px;
+}
+
+.link{
+  
+    text-decoration: none;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    padding: 20px 40px;
+    margin-top: 10px;
+
+
+    color: white;
+    background: black;
+
+    font-family: "poppins", sans-serif;
+
+    transition: 0.6s;
+
+}
+
+.link:hover{
+   transform: scale(1.05);
 }
 
 .nossa-historia{
@@ -426,6 +438,7 @@ html{
 
 .padrinhos{
     height: 100vh;
+    background: rgb(238, 243, 241) ;
     
 }
 
@@ -438,7 +451,7 @@ html{
     padding-top: 2em;
     padding-bottom: 2em;
     text-transform: none ;
-    background: white;
+    
 }
 
 .slides{
@@ -478,99 +491,68 @@ html{
 }
 
 .box-padrinhos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
 
-    border: 2px solid black;
+    margin: 10px;
+
+    border: 3px solid black;
     border-radius: 50%;
 
     width: 150px;
     height: 150px;
 
     position: relative;
+
+    overflow: hidden;
+
+    background-color: black;
+
+    object-fit: cover;
 }
 
-.bloco-padrinhos-1, .bloco-padrinhos-2, .bloco-padrinhos-3, .bloco-padrinhos-4{
-    transition: 1s;
 
-}
-
-.bloco-padrinhos-1{
-    background-color: red;
+.box-padrinhos img{
+    transform: scale(1.0);
+    transition: 0.2s;
     
+   
+}
+
+.box-padrinhos img:hover{
+    -webkit-filter: grayscale(1);
     
-} 
-
-.bloco-padrinhos-2{
-    background: blue;
 }
 
-.bloco-padrinhos-3{
-    background: #76BA99;
-} 
-
-.bloco-padrinhos-4{
-    background: #696969;
+.box-padrinhos h3{
+    position: absolute;
+   
 }
+
+
+
+
 .oculto{
     display: none;
-   
+}
+
+.teste{
+    border-bottom: solid 1px black;
+    background: white;
 }
 
 
-/* 
-
-.botoes-slide{
-    display: flex;
-    width: 10vw;
-    margin: auto;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    
-    align-self: bottom;
-    
-   
-   
-}
-
-
-.fa-square{
-    padding: 0 2px;
-    transition: 0.4s;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: #fff;
-
-    
-}
-
-
-
-.fa-square:hover{
-    transform:  scale(1.2);
-    color: black;
-    
-}
-
-.fa-square:active{
-    transform:  scale(1.0);
-    color: black;
-    
-} */
 
 .swiper {
     width: 50%;
     height: 50%;
-    color: #76BA99,;
+    color: #76BA99;
   }
 
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: rgb(238, 243, 241);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -587,7 +569,7 @@ html{
     align-items: center;
   }
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -595,15 +577,15 @@ html{
 
   }
 
-  .swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after, .swiper-button-prev:after{
     color: black;
   }
 
-  .swiper-slide{
+.swiper-slide{
     display: block;
   }
 
-  .swiper-padrinhos-cima{
+.swiper-padrinhos-cima{
     display: flex;
     margin: auto;
     width: 100%;
@@ -611,7 +593,7 @@ html{
 
   }
 
-  .swiper-padrinhos-baixo{
+.swiper-padrinhos-baixo{
     display: flex;
     margin: auto;
     width: 100%;
@@ -619,7 +601,7 @@ html{
 
   }
 
-  .swiper-pagination{
+.swiper-pagination{
     display: none;
   }
 
