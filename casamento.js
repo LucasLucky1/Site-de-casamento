@@ -42,8 +42,15 @@ window.addEventListener('scroll', function(){
 
 
 
-var exibir = document.querySelector(".botao-exibir");
-exibir.addEventListener("click", function(){
+var mostrar = document.querySelector(".botao-mostrar");
+mostrar.addEventListener("click", function(){
     var presentes = document.querySelector(".presentes")
-    presentes.classList.toggle("exibir-mais")
+    presentes.classList.toggle("mostrar-mais")
+
+    if (presentes.classList.contains("mostrar-mais")) {
+      return mostrar.textContent = "Mostrar menos";
+      
+    }
+    mostrar.textContent = "Mostrar mais"
+    
 });
