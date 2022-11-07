@@ -478,21 +478,6 @@ html{
     
 }
 
-.slides{
-    height: 60vh;
-    border: 2px solid black;
-    width: 60vw;
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-
-    overflow: hidden;
-
-   
-}
-
-
 
 .divisao-padrinhos-duplo{
     display: flex;
@@ -564,6 +549,10 @@ html{
     color: #76BA99;
   }
 
+.swiper-wrapper{
+    overflow: visible;
+}
+
 
 .swiper-slide {
     text-align: center;
@@ -583,6 +572,10 @@ html{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+
+    overflow: visible;
+
+   
   }
 
 .swiper-slide img {
@@ -590,8 +583,12 @@ html{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 
   }
+
+
+
 
 .swiper-button-next:after, .swiper-button-prev:after{
     color: black;
@@ -616,6 +613,13 @@ html{
     justify-content: center;
 
   }
+.swiper-padrinhos-meio{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 .swiper-pagination{
     display: none;
@@ -646,7 +650,7 @@ html{
     background: linear-gradient(transparent,#696969) ;
 }
 
-.mostrar-mais.presentes::before {
+.presentes.mostrar-mais::before {
    background: none;
 }
 
@@ -680,9 +684,24 @@ html{
     flex-direction: column;
     align-items: center;
 
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
     
+    box-shadow: 2px 2px 3px 3px  #000000;
+
+    width: 13%;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
     
 
+}
+
+
+.box-presentes:hover{
+    transform: scale(1.05);
 }
 
 .imagem-box-presentes{
@@ -692,7 +711,7 @@ html{
     background: #ffffff;
 
     height: 10em;
-    width: 10em;
+    
     
 
     
@@ -714,39 +733,40 @@ html{
     
 }
 
-.imagem-box-presentes img:hover{
-    transform: scale(1.2);
+
+.mercadopago-button{
+    background: #76BA99;
+    font-family: "poppins";
+    font-size: 0.8em;
+    font-weight: 500;
 }
 
 .botao-mostrar{
    
     position: absolute;
     bottom: 1%;
-
-        
-
-    left: 47.5%;
+    left: 47.2%;
     
-
     display: flex;
 
-    width: 6.8em;
-    padding: 6px;
+    width: 6.6em;
+    padding: 7px 6px;
     
-    
-
     cursor: pointer;
 
     font-family: "poppins";
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 500;
     
-    color: #ffffff;
-    background: #009ee3;
+    
 
     border-radius: 12%;
+    border:none;
 
     transition: 0.4s;
+
+    color: #ffffff;
+    background: #76BA99;
 
 
 
@@ -754,6 +774,8 @@ html{
 
 .botao-mostrar:hover{
     transform: scale(1.1);
+    box-shadow:  2px 2px #000000;
+    
 }
 
 .mostrar-mais{
