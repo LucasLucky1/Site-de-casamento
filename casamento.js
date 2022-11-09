@@ -47,7 +47,7 @@ mostrar.addEventListener("click", function(){
     var presentes = document.querySelector(".presentes")
     presentes.classList.toggle("mostrar-mais")
 
-    if (presentes.classList.contains("mostrar-mais")) {
+    if(presentes.classList.contains("mostrar-mais")) {
       return mostrar.textContent = "Mostrar menos";
       
     }
