@@ -1,4 +1,5 @@
 
+@media screen and (min-width:481px) {
 html{
     scroll-behavior:smooth;
     
@@ -17,6 +18,12 @@ html{
     background-color:#696969;
 
 }
+
+.img-mobile-only, .botao-mobile-only{
+    display: none;
+}
+
+
 
 .cabecalho{
     
@@ -803,7 +810,7 @@ html{
 
 
 
-
+}
 
 
 
@@ -844,6 +851,7 @@ html{
         background: #ffffff;
     }
 
+
     .cabecalho{
         
         
@@ -863,18 +871,47 @@ html{
     
         transition: 0.4s;
 
+       
+
         
         
            
     }
 
+    .cabecalho-mobile{
+        border-bottom: 1px solid black;
+        width: 100vw;
+        background: #ffffff;
+        position:fixed;
+        display: flex;
+        justify-content: center;
 
+        font-family: "poppins", sans-serif;
 
-    .cabecalho::before{
-        content: '\e68e';
+        font-size: 30px;
+
+        height: 40px;
+        text-align: center;
 
         
+        
+        
     }
+
+   
+
+    
+    .cabecalho::before{
+        content: 'Kezia e Lucas';
+        font-family: 'Alex Brush', cursive;
+       
+       
+      
+
+    }
+
+
+   
     
     .cabecalho-item{
         font-size: 17px;
@@ -884,6 +921,8 @@ html{
         font-weight: bold;
         text-transform: uppercase;
         transition: 0.4s;
+
+        display: none;
         
         
         
@@ -915,34 +954,9 @@ html{
         background: white;
     }
     
-    
-    
-    .main{
-        /* background-color: #76BA99;
-        opacity: 1;
-        background-image:  radial-gradient(#ffffff 2px, transparent 2px), radial-gradient(#ffffff 2px, #76BA99 2px);
-        background-size: 80px 80px;
-        background-position: 0 0,40px 40px; */
-        
-      background-image: url(img/125A2891.jpg);
-      background-size:cover;
-      background-repeat:no-repeat;
-      background-position: -45px 0;
-      height: 100vh;
-      
-     
-     
-    
-    }
-    
-    
-    
-    .principal{
-        align-items: flex-start;
-        
-        
-
-       
+  
+    .principal{  
+        overflow: hidden;
     }
     
     
@@ -958,13 +972,45 @@ html{
         padding: 1em 0;
         width: auto;
 
+       
+
     
     }
-    
+    main .titulo-principal{
+        display: none;
+    }
+
     .titulo-principal::selection{
         background: transparent;
     }
-    
+
+    .img-mobile-only{
+       
+        max-height: 100vh;
+        width: auto;
+        transform: translate(-15%);
+        overflow: hidden;
+
+    }
+
+    .botao-mobile-only{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        
+    }    
+
+    .botao-mobile-only::before{
+        content: '\f0c9';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        font-size: 40px;
+
+        position: absolute;
+        top: 0;
+        right: 10px;
+
+    }
     
     .referencias{
         
@@ -1314,16 +1360,7 @@ html{
         
     }
     
-    
-    .divisao-padrinhos-duplo{
-        display: flex;
-        width: 40vw;
-        justify-content: space-around;
-        height: 20vh;
-        margin: auto;
-        
-    
-    }
+
     
     
     
@@ -1343,8 +1380,8 @@ html{
         border: 3px solid black;
         border-radius: 50%;
     
-        width: 10vw;
-        height: 20vh;
+        width: 10em;
+        height: 10em;
     
         position: relative;
     
@@ -1380,7 +1417,7 @@ html{
     
     
     .swiper {
-        width: 50%;
+        width: 100%;
         height: fit-content;
         color: #76BA99;
       }
@@ -1437,7 +1474,7 @@ html{
     .swiper-padrinhos-cima{
         display: flex;
         margin: auto;
-        width: 100%;
+        width: 75%;
         justify-content: center;
     
       }
@@ -1446,6 +1483,7 @@ html{
         display: flex;
         margin: auto;
         width: 100%;
+        height: 100%;
         justify-content: center;
     
       }
