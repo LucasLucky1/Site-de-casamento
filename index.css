@@ -129,6 +129,7 @@ html{
     font-size: 9em;
     font-family: 'Alex Brush', cursive;
     padding-top: 210px;
+    text-align: center;
     
 
 }
@@ -191,9 +192,10 @@ html{
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 100px;
+    
     
 }
 
@@ -202,7 +204,7 @@ html{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 150px;
+    
    
 }
 
@@ -211,7 +213,7 @@ html{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 20px 150px;
+    
 }
 
 .texto-quando{
@@ -478,6 +480,7 @@ html{
 .padrinhos{
     height: 100vh;
     background: rgb(238, 243, 241) ;
+    padding-bottom: 100px;
     
 }
 
@@ -744,6 +747,24 @@ html{
     
 }
 
+.presentes-descricao{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10px;
+   margin-bottom: 20px; 
+   height: 20px;
+   text-align:center;
+}
+
+.presentes-preco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    padding-top: 10px;
+    
+}
 
 .mercadopago-button{
     background: #76BA99;
@@ -756,7 +777,8 @@ html{
    
     position: absolute;
     bottom: 1%;
-    left: 47.2%;
+    left: 50%;
+    transform: translateX(-50%);
     
     display: flex;
 
@@ -784,7 +806,7 @@ html{
 }
 
 .botao-mostrar:hover{
-    transform: scale(1.1);
+    transform: scale(1.1) translateX(-50%);
     box-shadow:  2px 2px #000000;
     
 }
@@ -1579,7 +1601,24 @@ html{
         object-fit: contain;
         
     }
-    
+    .presentes-descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 20px;
+        
+        text-align:center;
+     }
+     
+     .presentes-preco{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 20px;
+         
+     }
     
     .mercadopago-button{
         background: #76BA99;
@@ -1592,7 +1631,8 @@ html{
        
         position: absolute;
         bottom: 1%;
-        left: 47.2%;
+        left: 50%;
+        transform: translateX(-50%);
         
         display: flex;
     
@@ -1620,7 +1660,7 @@ html{
     }
     
     .botao-mostrar:hover{
-        transform: scale(1.1);
+        transform: scale(1.1) translateX(-50%);
         box-shadow:  2px 2px #000000;
         
     }
