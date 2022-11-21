@@ -1076,7 +1076,8 @@ html{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 150px;
+        margin-bottom: 100px;
+       
        
     }
     
@@ -1085,7 +1086,7 @@ html{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 20px 150px;
+        margin-bottom: 100px;
     }
     
     .texto-quando{
@@ -1131,7 +1132,6 @@ html{
        
     }
     
-     
       
     .nossa-historia .titulo-principal{
           font-size: 3.5em;
@@ -1145,7 +1145,24 @@ html{
           background: white;
           
     }
+    .timeline-box{
+        position: relative;
+    }
+
+    .timeline{
+        background: #eeeeee;
+        height: 100%;
+        
+        border: 2px solid transparent;
+        position: absolute;
+        left: 3%;
+        top: 0%;
+        z-index: 1;
+    }
     
+
+    
+
     .timeline-icon-cima{
         width: 10px;
         height: 10px;
@@ -1154,18 +1171,24 @@ html{
         border: 5px solid #eeeeee;
         border-radius: 50%;
         position: absolute;
-        left: 49.4%;
+        left: 1.2%;
         
-        top: 12%;
+        top: 0;
         z-index: 2;
     }
     
     .box-nossa-historia-1{
+        padding-top: 50px;
+    }
+
+    .box-nossa-historia-1, .box-nossa-historia-2, .box-nossa-historia-3, .box-nossa-historia-4, .box-nossa-historia-5{
         display: flex;
+        flex-direction: column;
         width: 80vw;
-        margin: auto;
-        padding-bottom: 100px;
-        justify-content: space-around;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        
+        align-items: center;
         text-align: center;
         
     
@@ -1184,6 +1207,8 @@ html{
         border-radius: 10px;
     
         overflow: hidden;
+
+        order: 1;
     
        
         
@@ -1204,6 +1229,8 @@ html{
         border-radius: 10px;
     
         overflow: hidden;
+
+        order: 1;
         
     }
     
@@ -1218,25 +1245,10 @@ html{
     }
     
     .background-timeline-icones{
-       
-        align-self: center;
-        justify-self: center;
-        background: #eeeeee;
-        transition: 0.4s ease-in-out;
-        border: 10px solid #eeeeee;
-        border-radius: 50%;
-        z-index: 2;
-        
-        
-        
+        display: none;    
     }
     
-    
-    .background-timeline-icones:hover{
-         transform: scale(1.2);
-         box-shadow: 1px 1px 10px #000000 ;
-         
-    }
+  
     
     
     
@@ -1265,7 +1277,8 @@ html{
     .descricao-direita h3, .descricao-esquerda h3{
         font-family: 'Alex Brush', cursive;
         font-size: 2.5em;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+
     }
     
     .texto{
@@ -1281,54 +1294,8 @@ html{
         color: #76BA99;
     }
     
-    .box-nossa-historia-2{
-        display: flex;
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 100px;
-        justify-content: space-around;
-      
     
-    }
-    .box-nossa-historia-3{
-        display: flex;
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 100px;
-        justify-content: space-around;
-      
-    
-    }
-    .box-nossa-historia-4{
-        display: flex;
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 100px;
-        justify-content: space-around;
-      
-    
-    }
-    .box-nossa-historia-5{
-        display: flex;
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 100px;
-        justify-content: space-around;
-      
-    
-    }
-    
-    .timeline{
-        background: #eeeeee;
-        height: 96.5vw;
-        
-        border: 2px solid transparent;
-        position: absolute;
-        left: 49.9%;
-        top: 13%;
-        z-index: 1;
-    }
-    
+
     .timeline-icon-baixo{
         width: 10px;
         height: 10px;
@@ -1337,10 +1304,13 @@ html{
         border: 5px solid #eeeeee;
         border-radius: 50%;
         position: absolute;
-        left: 49.4%;
-        bottom: 3%;
+        left: 1.2%;
+        bottom: -1%;
         z-index: 2;
     }
+    
+    
+  
     
     .padrinhos{
         height: 100vh;
