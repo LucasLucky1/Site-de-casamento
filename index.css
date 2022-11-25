@@ -23,6 +23,9 @@ html{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 .cabecalho{
@@ -42,7 +45,9 @@ html{
     
     z-index: 5;
 
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
+
+   
        
 }
 
@@ -53,7 +58,7 @@ html{
     padding: 10px 20px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: 0.4s;
+    transition: 0.4s ;
 
     
     
@@ -92,6 +97,9 @@ html{
 .cabecalho-move{
     border-bottom: solid 1px black;
     background: white;
+
+   
+   
 }
 
 
@@ -177,6 +185,7 @@ html{
     padding: 10px;
     font-size: 24px;
     font-family: "poppins", sans-serif;
+    text-align: center;
 }
 
 
@@ -235,8 +244,8 @@ html{
     margin-top: 10px;
 
 
-    color: white;
-    background: black;
+    color: #fff;
+    background: linear-gradient(#464d55 1%, #25292e);
 
     font-family: "poppins", sans-serif;
 
@@ -766,12 +775,46 @@ html{
     
 }
 
-.mercadopago-button{
-    background: #76BA99;
+.botao-presente{
+    
+    height: 3em;
+    
     font-family: "poppins";
     font-size: 0.8em;
     font-weight: 500;
+    border-radius: 8px;
+    border: solid black 2px;
+    color: #fff;
+    
+    cursor: pointer;
+    transition: 0.4s;
+
+    background: linear-gradient(#464d55 1%, #25292e);
+
+   
+
+    
+    border: 1px solid black;
+    border-radius: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
 }
+
+.botao-presente:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px #000000 ;
+}
+
+
 
 .botao-mostrar{
    
@@ -782,7 +825,8 @@ html{
     
     display: flex;
 
-    width: 6.6em;
+    width: 6.3em;
+    height: 3em;
     padding: 7px 6px;
     
     cursor: pointer;
@@ -793,13 +837,17 @@ html{
     
     
 
-    border-radius: 12%;
+    border-radius: 8px;
     border:none;
 
     transition: 0.4s;
 
-    color: #ffffff;
-    background: #76BA99;
+    color: #fff;
+  
+
+    background: linear-gradient(#464d55 60%, #25292e);
+   
+   
 
 
 
@@ -1081,6 +1129,7 @@ html{
         font-family: "poppins", sans-serif;
         width: 7em;
         line-height: 1.5em;
+        text-align: center;
     }
     
     
