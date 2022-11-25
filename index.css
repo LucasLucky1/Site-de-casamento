@@ -772,6 +772,13 @@ a{
     align-items: center;
     height: 20px;
     padding-top: 10px;
+
+    color: #000000;
+    font-weight: bolder;
+    font-size: 1.2em;
+
+    padding-bottom: 10px;
+
     
 }
 
