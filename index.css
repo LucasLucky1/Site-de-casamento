@@ -760,10 +760,13 @@ a{
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 10px;
+   margin-top: 20px;
    margin-bottom: 20px; 
    height: 20px;
    text-align:center;
+   color: #000000;
+   font-weight: bolder;
+
 }
 
 .presentes-preco{
@@ -1669,18 +1672,104 @@ a{
      }
      
      .presentes-preco{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         height: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20px;
+        padding-top: 10px;
+
+        color: #000000;
+        font-weight: bolder;
+        font-size: 1.2em;
+
+        padding-bottom: 10px;
          
      }
     
-    .mercadopago-button{
-        background: #76BA99;
+    
+
+    .botao-presente{
+    
+        height: 3em;
+        
         font-family: "poppins";
         font-size: 0.8em;
         font-weight: 500;
+        border-radius: 8px;
+        border: solid black 2px;
+        color: #fff;
+        
+        cursor: pointer;
+        transition: 0.4s;
+    
+        background: linear-gradient(#464d55 1%, #25292e);
+    
+       
+    
+        
+        border: 1px solid black;
+        border-radius: 100%;
+    
+        padding: 20px;
+    
+        box-sizing: border-box;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    
+    }
+    
+    .botao-presente:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 1px 10px #000000 ;
+    }
+    
+    
+    
+    .botao-mostrar{
+       
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        display: flex;
+    
+        width: 6.3em;
+        height: 3em;
+        padding: 7px 6px;
+        
+        cursor: pointer;
+    
+        font-family: "poppins";
+        font-size: 0.8em;
+        font-weight: 500;
+        
+        
+    
+        border-radius: 8px;
+        border:none;
+    
+        transition: 0.4s;
+    
+        color: #fff;
+      
+    
+        background: linear-gradient(#464d55 60%, #25292e);
+       
+       
+    
+    
+    
+    }
+    
+    .botao-mostrar:hover{
+        transform: scale(1.1) translateX(-50%);
+        box-shadow:  2px 2px #000000;
+        
     }
     
     .botao-mostrar{
