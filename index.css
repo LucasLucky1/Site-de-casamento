@@ -843,7 +843,7 @@ a{
 .botao-mostrar{
    
     position: absolute;
-    bottom: 1%;
+    bottom: 0.8%;
     left: 50%;
     transform: translateX(-50%);
     
@@ -1016,6 +1016,7 @@ a{
 
     
     .cabecalho::before{
+        padding-top: 10px;
         content: 'Kezia e Lucas';
         font-family: 'Alex Brush', cursive;
        
@@ -1132,8 +1133,8 @@ a{
 
     .botao-mobile-only{
         position: absolute;
-        top: 0;
-        right: 10px;
+        top: 9px;
+        right: 9px;
         
     }    
 
@@ -1141,7 +1142,7 @@ a{
         content: '\f0c9';
         font-family: 'Font Awesome\ 5 Free';
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
 
         position: absolute;
         top: 5px;
@@ -1788,7 +1789,7 @@ a{
     .botao-mostrar{
        
         position: absolute;
-        bottom: 1%;
+        bottom: 0.8%;
         left: 50%;
         transform: translateX(-50%);
         
