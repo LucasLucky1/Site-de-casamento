@@ -256,6 +256,7 @@ a{
 .link:hover{
    transform: scale(1.1);
    box-shadow: 1px 1px 10px #000000 ;
+  
    
 }
 
@@ -701,7 +702,20 @@ a{
 .linha-presentes{
     display: flex;
     justify-content:center ;
+    
+
+     
    
+}
+
+.linha-presentes-mobile{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+
+   
+    
 }
 
 .box-presentes{
@@ -717,7 +731,7 @@ a{
     
     box-shadow: 2px 2px 3px 3px  #000000;
 
-    width: 13%;
+    width: 14vw;
 
     cursor: pointer;
 
@@ -933,9 +947,14 @@ a{
         background-color:#696969;
     
     }
-
-    body{
+  
+    body{ 
         background: #ffffff;
+    }
+   
+
+    a{
+        text-decoration: none;
     }
 
 
@@ -960,6 +979,8 @@ a{
 
        
 
+       
+
         
         
            
@@ -975,10 +996,16 @@ a{
 
         font-family: "poppins", sans-serif;
 
-        font-size: 30px;
+        font-size: 36px;
 
-        height: 40px;
+        height: fit-content;
         text-align: center;
+
+        z-index: 101;
+
+        
+
+       
 
         
         
@@ -997,6 +1024,25 @@ a{
 
     }
 
+    .body-invisivel::before{
+        background: rgba(0, 0, 0, 0.4);
+        
+        
+        position: fixed;
+        
+        
+        content: '';
+
+        height: 100vh;
+        width: 100vw;
+        
+       
+        z-index: 100;
+        
+    }
+  
+
+   
 
    
     
@@ -1007,7 +1053,7 @@ a{
         padding: 10px 20px;
         font-weight: bold;
         text-transform: uppercase;
-        transition: 0.4s;
+        transition: 5s;
 
         display: none;
         
@@ -1016,6 +1062,10 @@ a{
         
     
        
+    }
+
+    .cabecalho-item-ativo{
+        display: block;
     }
     
     .cabecalho-item:hover{
@@ -1094,7 +1144,7 @@ a{
         font-size: 40px;
 
         position: absolute;
-        top: 0;
+        top: 5px;
         right: 10px;
 
     }
@@ -1403,6 +1453,8 @@ a{
     .padrinhos{
         height: 100vh;
         background: rgb(238, 243, 241) ;
+
+        padding-bottom: 100px;
         
     }
     
@@ -1603,10 +1655,14 @@ a{
     
     
     
-    .linha-presentes{
+    .linha-presentes-mobile{
         display: flex;
         justify-content:center ;
+        align-items: center;
+        width: 100vw;
+
        
+        
     }
     
     .box-presentes{
@@ -1622,7 +1678,7 @@ a{
         
         box-shadow: 2px 2px 3px 3px  #000000;
     
-        width: 13%;
+        width: 50%;
     
         cursor: pointer;
     
@@ -1772,37 +1828,7 @@ a{
         
     }
     
-    .botao-mostrar{
-       
-        position: absolute;
-        bottom: 1%;
-        left: 50%;
-        transform: translateX(-50%);
-        
-        display: flex;
-    
-        width: 6.6em;
-        padding: 7px 6px;
-        
-        cursor: pointer;
-    
-        font-family: "poppins";
-        font-size: 0.8em;
-        font-weight: 500;
-        
-        
-    
-        border-radius: 12%;
-        border:none;
-    
-        transition: 0.4s;
-    
-        color: #ffffff;
-        background: #76BA99;
-    
-    
-    
-    }
+   
     
     .botao-mostrar:hover{
         transform: scale(1.1) translateX(-50%);

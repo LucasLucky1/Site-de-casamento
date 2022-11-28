@@ -1,4 +1,4 @@
-
+//Swiper
 var swiper = new Swiper(".mySwiper", {
     cssMode: true,
     navigation: {
@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
 
   
 
-  
+//Animação de cabecalho no scroll
 window.addEventListener('scroll', function(){
     var cabecalho = document.querySelector('.cabecalho');
     cabecalho.classList.toggle("cabecalho-move", window.scrollY > 100);
@@ -29,7 +29,7 @@ window.addEventListener('scroll', function(){
   
 
 
-
+//Modificação de cor no cabeçalho no scroll
 window.addEventListener('scroll', function(){
     var cabecalhoItens = document.querySelectorAll('.cabecalho-item');
     cabecalhoItens[0].classList.toggle("cabecalho-ativo", window.scrollY >= 0  & window.scrollY < 700);
@@ -41,7 +41,7 @@ window.addEventListener('scroll', function(){
 
 
 
-
+//Botão mostrar mais em presentes
 var mostrar = document.querySelector(".botao-mostrar");
 mostrar.addEventListener("click", function(){
     var presentes = document.querySelector(".presentes")
@@ -54,3 +54,23 @@ mostrar.addEventListener("click", function(){
     mostrar.textContent = "Mostrar mais"
     
 });
+
+
+//Botão do cabeçalho
+var botaoCabecalhoMobile = document.querySelector('.botao-mobile-only');
+botaoCabecalhoMobile.addEventListener('click', function(){
+    var cabecalhoItem = document.querySelectorAll('.cabecalho-item');
+    for ( x = 0; x < cabecalhoItem.length; x++) {
+      cabecalhoItem[x].classList.toggle('cabecalho-item-ativo');
+    
+    }
+
+    var body = document.querySelector('.body');
+    body.classList.toggle('body-invisivel')
+
+
+
+
+    
+
+})
