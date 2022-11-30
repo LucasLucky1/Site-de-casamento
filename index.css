@@ -416,20 +416,55 @@ a{
 
 .historia-ele,.historia-ela{
     
-    background: #000000;
+    
     color: #fff;
 
-    
-    margin-inline: 20px;
-    
-
+    position: relative;
     cursor: pointer;
 
     border: 1px solid black;
     border-radius: 50%;
     padding: 20px 40px;
+    margin-inline: 20px;
     background: linear-gradient(#464d55 1%, #25292e);
+
+    overflow: hidden;
+
+    
+   
 }
+
+.historia-ele:hover,.historia-ela:hover{
+    color: #000000;
+
+}
+
+.historia-ela::before, .historia-ele::before{
+
+    background: #eeeeee;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+
+    width: 0%;
+    height: 100%;
+    z-index: 0;
+
+}
+
+.historia-ela:hover::before, .historia-ele:hover::before{
+    
+  
+    
+    width: 100%;
+    
+    
+
+}
+
 
 .box-nossa-historia-2{
     display: flex;
