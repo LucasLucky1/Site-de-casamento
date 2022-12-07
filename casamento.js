@@ -73,4 +73,63 @@ botaoCabecalhoMobile.addEventListener('click', function(){
 
     
 
-})
+});
+
+
+//Botão nossa história
+var historiaEla1 = document.querySelector('.historia-ela-1');
+
+historiaEla1.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEla1 = document.querySelector(".box-historias-aberto-ela-1");
+    boxHistoriasAbertoEla1.classList.toggle('box-historias-aberto-ela-ativo');
+    
+
+
+});
+
+
+
+var historiaEla2 = document.querySelector('.historia-ela-2');
+
+historiaEla2.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEla2 = document.querySelector(".box-historias-aberto-ela-2");
+    boxHistoriasAbertoEla2.classList.toggle('box-historias-aberto-ela-ativo');
+    
+
+
+});
+
+var historiaEla3 = document.querySelector('.historia-ela-3');
+
+historiaEla3.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEla3 = document.querySelector(".box-historias-aberto-ela-3");
+    boxHistoriasAbertoEla3.classList.toggle('box-historias-aberto-ela-ativo');
+    
+
+
+});
+
+var historiaEla4 = document.querySelector('.historia-ela-4');
+
+historiaEla4.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEla4 = document.querySelector(".box-historias-aberto-ela-4");
+    boxHistoriasAbertoEla4.classList.toggle('box-historias-aberto-ela-ativo');
+    
+
+
+});
+
+var historiaEla5 = document.querySelector('.historia-ela-5');
+
+historiaEla5.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEla5 = document.querySelector(".box-historias-aberto-ela-5");
+    boxHistoriasAbertoEla5.classList.toggle('box-historias-aberto-ela-ativo');
+    
+
+
+});

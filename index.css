@@ -414,7 +414,7 @@ a{
     
 }
 
-.historia-ele,.historia-ela{
+.historia-ele,.historia-ela-1,.historia-ela-2,.historia-ela-3,.historia-ela-4,.historia-ela-5{
     
     
     color: #fff;
@@ -433,41 +433,60 @@ a{
     font-size: 0.8em;
     font-family: "poppins", sans-serif;
 
+    transition: ease-in-out 0.3s;
     
    
 }
 
 .historia-ele:hover,.historia-ela:hover{
-    color: #000000;
+    
+    box-shadow: 1px 1px 10px #000000 ;
 
 }
 
-.historia-ela::before, .historia-ele::before{
+.historia-ele-ativo{
+    transform: scale(1.1) translateX(50%);
+}
 
-    background: #eeeeee;
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: 0.5s;
+.box-historias-aberto-ela-1, .box-historias-aberto-ela-2, .box-historias-aberto-ela-3, .box-historias-aberto-ela-4, .box-historias-aberto-ela-5{
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.5s ;
+    
+    height: 0;
+    border: #000000 2px solid;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
 
-    width: 0%;
-    height: 100%;
-    z-index: 0;
+    overflow: hidden;
+
+    position: relative;
+    top: -100vh;
 
 }
 
-.historia-ela:hover::before, .historia-ele:hover::before{
+.box-historias-aberto-ela-ativo{
     
-  
-    
-    width: 100%;
-    
+    height: fit-content;
+   
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+
     
 
+    
+    
 }
 
+.enfase{
+    font-size: 1.1em;
+   
+    font-weight: bolder;
+    
+}
 
 .box-nossa-historia-2{
     display: flex;
@@ -475,6 +494,8 @@ a{
     margin: auto;
     padding-bottom: 100px;
     justify-content: space-around;
+
+    transition: 5s;
   
 
 }
@@ -484,7 +505,7 @@ a{
     margin: auto;
     padding-bottom: 100px;
     justify-content: space-around;
-  
+    transition: 5s;
 
 }
 .box-nossa-historia-4{
@@ -493,6 +514,7 @@ a{
     margin: auto;
     padding-bottom: 100px;
     justify-content: space-around;
+    transition: 5s;
   
 
 }
@@ -502,6 +524,7 @@ a{
     margin-inline: auto;
     margin-bottom: 100px;
     justify-content: space-around;
+    transition: 5s;
   
 
 }
