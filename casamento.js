@@ -76,15 +76,14 @@ botaoCabecalhoMobile.addEventListener('click', function(){
 });
 
 
-//Botão nossa história
+//Botão nossa história - ela
 var historiaEla1 = document.querySelector('.historia-ela-1');
 
 historiaEla1.addEventListener('click', function(){
   
     var boxHistoriasAbertoEla1 = document.querySelector(".box-historias-aberto-ela-1");
     boxHistoriasAbertoEla1.classList.toggle('box-historias-aberto-ela-ativo');
-    
-
+    historiaEle1.classList.toggle('esconde-historia');
 
 });
 
@@ -96,8 +95,7 @@ historiaEla2.addEventListener('click', function(){
   
     var boxHistoriasAbertoEla2 = document.querySelector(".box-historias-aberto-ela-2");
     boxHistoriasAbertoEla2.classList.toggle('box-historias-aberto-ela-ativo');
-    
-
+    historiaEle2.classList.toggle('esconde-historia');
 
 });
 
@@ -107,8 +105,7 @@ historiaEla3.addEventListener('click', function(){
   
     var boxHistoriasAbertoEla3 = document.querySelector(".box-historias-aberto-ela-3");
     boxHistoriasAbertoEla3.classList.toggle('box-historias-aberto-ela-ativo');
-    
-
+    historiaEle3.classList.toggle('esconde-historia');
 
 });
 
@@ -118,8 +115,7 @@ historiaEla4.addEventListener('click', function(){
   
     var boxHistoriasAbertoEla4 = document.querySelector(".box-historias-aberto-ela-4");
     boxHistoriasAbertoEla4.classList.toggle('box-historias-aberto-ela-ativo');
-    
-
+    historiaEle4.classList.toggle('esconde-historia');
 
 });
 
@@ -129,7 +125,62 @@ historiaEla5.addEventListener('click', function(){
   
     var boxHistoriasAbertoEla5 = document.querySelector(".box-historias-aberto-ela-5");
     boxHistoriasAbertoEla5.classList.toggle('box-historias-aberto-ela-ativo');
-    
+    historiaEle5.classList.toggle('esconde-historia');
+
+});
+
+
+
+//Botão nossa história - ele
+var historiaEle1 = document.querySelector('.historia-ele-1');
+
+historiaEle1.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEle1 = document.querySelector(".box-historias-aberto-ele-1");
+    boxHistoriasAbertoEle1.classList.toggle('box-historias-aberto-ele-ativo');
+    historiaEla1.classList.toggle('esconde-historia');
+
+});
+
+
+
+var historiaEle2 = document.querySelector('.historia-ele-2');
+
+historiaEle2.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEle2 = document.querySelector(".box-historias-aberto-ele-2");
+    boxHistoriasAbertoEle2.classList.toggle('box-historias-aberto-ele-ativo');
+    historiaEla2.classList.toggle('esconde-historia');
+
+});
+
+var historiaEle3 = document.querySelector('.historia-ele-3');
+
+historiaEle3.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEle3 = document.querySelector(".box-historias-aberto-ele-3");
+    boxHistoriasAbertoEle3.classList.toggle('box-historias-aberto-ele-ativo');
+    historiaEla3.classList.toggle('esconde-historia');
+
+});
+
+var historiaEle4 = document.querySelector('.historia-ele-4');
+
+historiaEle4.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEle4 = document.querySelector(".box-historias-aberto-ele-4");
+    boxHistoriasAbertoEle4.classList.toggle('box-historias-aberto-ele-ativo');
+    historiaEla4.classList.toggle('esconde-historia');
+
+});
+
+var historiaEle5 = document.querySelector('.historia-ele-5');
+
+historiaEle5.addEventListener('click', function(){
+  
+    var boxHistoriasAbertoEle5 = document.querySelector(".box-historias-aberto-ele-5");
+    boxHistoriasAbertoEle5.classList.toggle('box-historias-aberto-ele-ativo');
+    historiaEla5.classList.toggle('esconde-historia');
 
 
 });
