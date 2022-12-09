@@ -597,7 +597,7 @@ a{
     left: 50%;
     transform: translateX(-50%);
     
-    top: -1%;
+    top: -0.5%;
     z-index: 2;
 }
 
@@ -623,7 +623,7 @@ a{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -1%;
+    bottom: -0.5%;
     z-index: 2;
 }
 
