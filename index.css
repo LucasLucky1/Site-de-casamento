@@ -1,5 +1,5 @@
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:940px) {
 html{
     scroll-behavior:smooth;
     
@@ -1042,7 +1042,7 @@ strong{
 
 /* Viewport para Mobile */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:800px) {
     html{
         scroll-behavior:smooth;
         
