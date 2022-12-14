@@ -75,73 +75,75 @@ botaoCabecalhoMobile.addEventListener('click', function(){
 
 });
 
-//Botão nossa história - ela aprimorado (tentativa)
-var historiaEla = document.querySelectorAll('.historia-ela');
-var boxHistoriasAbertoEla = document.querySelectorAll('.box-historias-aberto-ela');
-var contadorHistoria = 0
-while (contadorHistoria< historiaEla.length) {
-    y=0
-        historiaEla[contadorHistoria].addEventListener('click', function(){
+// //Botão nossa história - ela aprimorado (tentativa)
+// var historiaEla = document.querySelectorAll('.historia-ela');
+// var boxHistoriasAbertoEla = document.querySelectorAll('.box-historias-aberto-ela');
+// var contadorHistoria = 0
+// var y = 0
+// while (contadorHistoria< historiaEla.length) {
+    
+//         historiaEla[contadorHistoria].addEventListener('click', function(){
         
-        boxHistoriasAbertoEla[y].classList.toggle('box-historias-aberto-ela-ativo');
+//         boxHistoriasAbertoEla[y].classList.toggle('box-historias-aberto-ela-ativo');
         
-    });
-    y++
-    contadorHistoria++
-}
+//     });
+//     y++
+//     contadorHistoria++
+// }
 
-//Botão nossa história - ela
-// var historiaEla1 = document.querySelector('.historia-ela-1');
 
-// historiaEla1.addEventListener('click', function(){
+// Botão nossa história - ela
+var historiaEla1 = document.querySelector('.historia-ela-1');
+
+historiaEla1.addEventListener('click', function(){
   
-//     var boxHistoriasAbertoEla1 = document.querySelector(".box-historias-aberto-ela-1");
-//     boxHistoriasAbertoEla1.classList.toggle('box-historias-aberto-ela-ativo');
-//     historiaEle1.classList.toggle('esconde-historia');
+    var boxHistoriasAbertoEla1 = document.querySelector(".box-historias-aberto-ela-1");
+    boxHistoriasAbertoEla1.classList.toggle('box-historias-aberto-ela-ativo');
+    historiaEle1.classList.toggle('esconde-historia');
 
-// });
+});
 
 
 
-// var historiaEla2 = document.querySelector('.historia-ela-2');
+var historiaEla2 = document.querySelector('.historia-ela-2');
 
-// historiaEla2.addEventListener('click', function(){
+historiaEla2.addEventListener('click', function(){
   
-//     var boxHistoriasAbertoEla2 = document.querySelector(".box-historias-aberto-ela-2");
-//     boxHistoriasAbertoEla2.classList.toggle('box-historias-aberto-ela-ativo');
-//     historiaEle2.classList.toggle('esconde-historia');
+    var boxHistoriasAbertoEla2 = document.querySelector(".box-historias-aberto-ela-2");
+    boxHistoriasAbertoEla2.classList.toggle('box-historias-aberto-ela-ativo');
+    historiaEle2.classList.toggle('esconde-historia');
 
-// });
+});
 
-// var historiaEla3 = document.querySelector('.historia-ela-3');
+var historiaEla3 = document.querySelector('.historia-ela-3');
 
-// historiaEla3.addEventListener('click', function(){
+historiaEla3.addEventListener('click', function(){
   
-//     var boxHistoriasAbertoEla3 = document.querySelector(".box-historias-aberto-ela-3");
-//     boxHistoriasAbertoEla3.classList.toggle('box-historias-aberto-ela-ativo');
-//     historiaEle3.classList.toggle('esconde-historia');
+    var boxHistoriasAbertoEla3 = document.querySelector(".box-historias-aberto-ela-3");
+    boxHistoriasAbertoEla3.classList.toggle('box-historias-aberto-ela-ativo');
+    historiaEle3.classList.toggle('esconde-historia');
 
-// });
+});
 
-// var historiaEla4 = document.querySelector('.historia-ela-4');
+var historiaEla4 = document.querySelector('.historia-ela-4');
 
-// historiaEla4.addEventListener('click', function(){
+historiaEla4.addEventListener('click', function(){
   
-//     var boxHistoriasAbertoEla4 = document.querySelector(".box-historias-aberto-ela-4");
-//     boxHistoriasAbertoEla4.classList.toggle('box-historias-aberto-ela-ativo');
-//     historiaEle4.classList.toggle('esconde-historia');
+    var boxHistoriasAbertoEla4 = document.querySelector(".box-historias-aberto-ela-4");
+    boxHistoriasAbertoEla4.classList.toggle('box-historias-aberto-ela-ativo');
+    historiaEle4.classList.toggle('esconde-historia');
 
-// });
+});
 
-// var historiaEla5 = document.querySelector('.historia-ela-5');
+var historiaEla5 = document.querySelector('.historia-ela-5');
 
-// historiaEla5.addEventListener('click', function(){
+historiaEla5.addEventListener('click', function(){
   
-//     var boxHistoriasAbertoEla5 = document.querySelector(".box-historias-aberto-ela-5");
-//     boxHistoriasAbertoEla5.classList.toggle('box-historias-aberto-ela-ativo');
-//     historiaEle5.classList.toggle('esconde-historia');
+    var boxHistoriasAbertoEla5 = document.querySelector(".box-historias-aberto-ela-5");
+    boxHistoriasAbertoEla5.classList.toggle('box-historias-aberto-ela-ativo');
+    historiaEle5.classList.toggle('esconde-historia');
 
-// });
+});
 
 
 
