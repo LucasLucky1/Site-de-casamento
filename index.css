@@ -476,6 +476,9 @@ a{
     
 }
 
+
+
+
 .box-historias-aberto-ele-1:hover, .box-historias-aberto-ele-2:hover, .box-historias-aberto-ele-3:hover, .box-historias-aberto-ele-4:hover, .box-historias-aberto-ele-5:hover{
     transform: scale(1.05);
     box-shadow: rgb(0 0 0) 2px 2px 7px 3px;
@@ -515,6 +518,10 @@ a{
     box-shadow: rgb(0 0 0) 2px 2px 3px 3px;
 
 }
+
+
+
+
 .box-historias-aberto-ela-1:hover, .box-historias-aberto-ela-2:hover, .box-historias-aberto-ela-3:hover, .box-historias-aberto-ela-4:hover, .box-historias-aberto-ela-5:hover{
     transform: scale(1.05);
     box-shadow: rgb(0 0 0) 2px 2px 7px 3px;
@@ -549,6 +556,7 @@ strong{
     text-indent: 0;
     
 }
+
 
 .box-nossa-historia-5{
     margin-inline: auto;
@@ -1830,8 +1838,10 @@ strong{
     
     
     
-    .swiper-button-next:after, .swiper-button-prev:after{
+    
+      .swiper-button-next:after, .swiper-button-prev:after{
         color: black;
+        transform: scale(0.55);
       }
     
     .swiper-slide{

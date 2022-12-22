@@ -135,15 +135,6 @@ historiaEla4.addEventListener('click', function(){
 
 });
 
-var historiaEla5 = document.querySelector('.historia-ela-5');
-
-historiaEla5.addEventListener('click', function(){
-  
-    var boxHistoriasAbertoEla5 = document.querySelector(".box-historias-aberto-ela-5");
-    boxHistoriasAbertoEla5.classList.toggle('box-historias-aberto-ela-ativo');
-    historiaEle5.classList.toggle('esconde-historia');
-
-});
 
 
 
@@ -196,7 +187,7 @@ historiaEle5.addEventListener('click', function(){
   
     var boxHistoriasAbertoEle5 = document.querySelector(".box-historias-aberto-ele-5");
     boxHistoriasAbertoEle5.classList.toggle('box-historias-aberto-ele-ativo');
-    historiaEla5.classList.toggle('esconde-historia');
+   
 
 
 });
