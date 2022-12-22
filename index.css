@@ -1,4 +1,4 @@
-
+  
 @media screen and (min-width:940px) {
 html{
     scroll-behavior:smooth;
@@ -1495,7 +1495,149 @@ strong{
     
     .nossa-historia img{
         transition: 1s ease-in-out;
-    }
+}
+
+  .box-historias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+    .historia-ela-1,.historia-ela-2,.historia-ela-3,.historia-ela-4,.historia-ela-5,.historia-ele-1,.historia-ele-2,.historia-ele-3,.historia-ele-4,.historia-ele-5{
+    
+    
+    color: #fff;
+
+    position: relative;
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px 40px;
+    margin-inline: 20px;
+    background: linear-gradient(#464d55 1%, #25292e);
+
+    overflow: hidden;
+    
+    font-size: 0.8em;
+    font-family: "poppins", sans-serif;
+
+    transition: ease-in 0.5s;
+    
+   
+}
+
+.historia-ele:hover,.historia-ela:hover{
+    
+    box-shadow: 1px 1px 10px #000000 ;
+
+}
+
+
+
+.box-historias-aberto-ele-1, .box-historias-aberto-ele-2, .box-historias-aberto-ele-3, .box-historias-aberto-ele-4, .box-historias-aberto-ele-5{
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.4s ;
+    
+    font-size: 1em;
+    height: 0;
+    width: 15em;
+    
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height:1.3em;
+
+    overflow:hidden;
+
+    position: relative;
+
+    
+    border-radius: 7px;
+    
+    box-shadow: rgb(0 0 0) 2px 2px 3px 3px;
+    
+}
+
+.box-historias-aberto-ele-1:hover, .box-historias-aberto-ele-2:hover, .box-historias-aberto-ele-3:hover, .box-historias-aberto-ele-4:hover, .box-historias-aberto-ele-5:hover{
+   
+    box-shadow: rgb(0 0 0) 2px 2px 7px 3px;
+}
+
+.box-historias-aberto-ele-ativo{
+    
+    height: 100%;
+    
+    visibility: visible;
+    opacity: 1;
+  
+}
+
+.box-historias-aberto-ela-1, .box-historias-aberto-ela-2, .box-historias-aberto-ela-3, .box-historias-aberto-ela-4, .box-historias-aberto-ela-5{
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.4s ;
+    
+    font-size: 1em;
+    height: 0;
+    width: 15em;
+   
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height:1.3em;
+    
+    overflow:hidden;
+
+    position: relative;
+    top: -10vh;
+
+    
+    border-radius: 7px;
+    box-shadow: rgb(0 0 0) 2px 2px 3px 3px;
+
+}
+.box-historias-aberto-ela-1:hover, .box-historias-aberto-ela-2:hover, .box-historias-aberto-ela-3:hover, .box-historias-aberto-ela-4:hover, .box-historias-aberto-ela-5:hover{
+   
+    box-shadow: rgb(0 0 0) 2px 2px 7px 3px;
+}
+
+
+.box-historias-aberto-ela-ativo{
+    
+    height: 100%;
+   
+    visibility: visible;
+    opacity: 1;
+ 
+    
+}
+
+.esconde-historia{
+    display: none;
+}
+
+strong{
+    font-weight: bolder;
+}
+.enfase{
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: 0;
+    
+}
     
     .background-timeline-icones{
         display: none;    
@@ -1509,8 +1651,8 @@ strong{
         width: 266px;
         display: flex;
         flex-direction: column;
-        text-align: start;
-        
+        text-align: center;
+         align-items: center;
     }
     
     
@@ -1518,10 +1660,10 @@ strong{
         width: 266px;
         display: flex;
         flex-direction: column;
-        text-align: start;
+        text-align: center;
         
-        
-        align-items:flex-start;
+        align-items: center;
+       
         
     }
     
