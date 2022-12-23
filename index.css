@@ -291,7 +291,9 @@ a{
     margin: auto;
     padding-bottom: 100px;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
+
     
 
   
@@ -374,6 +376,7 @@ a{
     flex-direction: column;
     text-align: start;
     align-items:center;
+    padding-top: 15%;
 }
 
 
@@ -382,9 +385,8 @@ a{
     display: flex;
     flex-direction: column;
     text-align: start;
-    
-    
     align-items:center;
+    padding-top: 15%;
     
 }
 
@@ -468,11 +470,13 @@ a{
     overflow:hidden;
 
     position: relative;
-
+    
     
     border-radius: 7px;
     
     box-shadow: rgb(0 0 0) 2px 2px 3px 3px;
+
+
     
 }
 
@@ -514,10 +518,13 @@ a{
     top: -10vh;
 
     
+
+    
     border-radius: 7px;
     box-shadow: rgb(0 0 0) 2px 2px 3px 3px;
 
 }
+
 
 
 
