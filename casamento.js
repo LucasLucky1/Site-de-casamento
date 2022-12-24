@@ -34,9 +34,9 @@ window.addEventListener('scroll', function(){
     var cabecalhoItens = document.querySelectorAll('.cabecalho-item');
     cabecalhoItens[0].classList.toggle("cabecalho-ativo", window.scrollY >= 0  & window.scrollY < 700);
     cabecalhoItens[1].classList.toggle("cabecalho-ativo", window.scrollY >= 700 & window.scrollY < 1450);
-    cabecalhoItens[2].classList.toggle("cabecalho-ativo", window.scrollY >= 1450 & window.scrollY < 3230);
-    cabecalhoItens[3].classList.toggle("cabecalho-ativo", window.scrollY >= 3230 & window.scrollY < 3900);
-    cabecalhoItens[4].classList.toggle("cabecalho-ativo", window.scrollY >= 3900 & window.scrollY < 5000);
+    cabecalhoItens[2].classList.toggle("cabecalho-ativo", window.scrollY >= 1450 & window.scrollY < 4700);
+    cabecalhoItens[3].classList.toggle("cabecalho-ativo", window.scrollY >= 4700 & window.scrollY < 5600);
+    cabecalhoItens[4].classList.toggle("cabecalho-ativo", window.scrollY >= 5600 );
 });
 
 
