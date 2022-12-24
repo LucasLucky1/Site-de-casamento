@@ -1019,21 +1019,61 @@ strong{
 
 .rodape{   
     /* background: #FFDCAE;  */
+    text-align: center;
+    
+    color: #ffffff;
+    background: #000000;
+    font-family: "poppins";
+    
+}
+
+.container-titulo{
+    margin-bottom: 3em;
+
+}
+
+.contatos-titulo{
+        
+        font-size: 3em;
+        padding-top: 1em;
+        font-family: 'Alex Brush', cursive;
+        text-align:center;
+        color: #ffffff;
+        
+        
+        
+}
+
+.container-contatos{
     display: flex;
     justify-content: center;
-    padding-top: 200px;
-    height: 100vh;
+    margin-bottom: 3em;
     
+   
+}
+
+.container-contatos a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.container-contatos li::first-letter{
+    text-transform: uppercase;
+}
+
+.contatos{
+    padding-inline: 50px;
 }
 
 .nota-rodape{
   
-    color: black;
+    color: #ffffff;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 
-    padding-top: 200px;
-    padding-bottom: 20px;
+    
     
 }
 
