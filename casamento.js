@@ -184,10 +184,12 @@ historiaEle4.addEventListener('click', function(){
 var historiaEle5 = document.querySelector('.historia-ele-5');
 
 historiaEle5.addEventListener('click', function(){
-  
+    
+   
+       
     var boxHistoriasAbertoEle5 = document.querySelector(".box-historias-aberto-ele-5");
     boxHistoriasAbertoEle5.classList.toggle('box-historias-aberto-ele-ativo');
-   
+    
 
 
 });
