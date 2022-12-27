@@ -758,6 +758,13 @@ strong{
 
   }
 
+.swiper-padrinhos-cima-triplo{
+    display: flex;
+    margin: auto;
+    
+    justify-content: center;
+}
+
 .swiper-padrinhos-baixo{
     display: flex;
     margin: auto;
@@ -1942,6 +1949,13 @@ strong{
             justify-content: center;
         
           }
+
+        .swiper-padrinhos-cima-triplo{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+        }
         
         .swiper-padrinhos-baixo{
             display: flex;
@@ -3130,6 +3144,12 @@ strong{
         justify-content: center;
     
       }
+      .swiper-padrinhos-cima-triplo{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
     
     .swiper-padrinhos-baixo{
         display: flex;
