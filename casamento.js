@@ -82,7 +82,7 @@ botaoCabecalhoMobile.addEventListener('click', function(){
 // var y = 0
 // while (contadorHistoria< historiaEla.length) {
     
-//         historiaEla[contadorHistoria].addEventListener('click', function(){
+//         historiaEla[contadorHistoria].addEventListener('click', ()=>{
         
 //         boxHistoriasAbertoEla[y].classList.toggle('box-historias-aberto-ela-ativo');
         
