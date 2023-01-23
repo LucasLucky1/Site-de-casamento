@@ -877,6 +877,8 @@ strong{
 }
 
 
+
+
 .box-presentes:hover{
     transform: scale(1.05);
 }
@@ -973,6 +975,7 @@ strong{
     transform: scale(1.1);
     box-shadow: 1px 1px 10px #000000 ;
 }
+
 
 
 
@@ -2150,13 +2153,12 @@ strong{
             transform: scale(1.1);
             box-shadow: 1px 1px 10px #000000 ;
         }
-        
-        
+       
         
         .botao-mostrar{
            
             position: absolute;
-            bottom: 0.8%;
+            bottom: 0.3%;
             left: 50%;
             transform: translateX(-50%);
             
@@ -3350,7 +3352,7 @@ strong{
     .botao-mostrar{
        
         position: absolute;
-        bottom: 0.8%;
+        bottom: 0.5%;
         left: 50%;
         transform: translateX(-50%);
         
