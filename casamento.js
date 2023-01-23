@@ -73,7 +73,7 @@ botaoCabecalhoMobile.addEventListener('click', function(){
         elemento.addEventListener('click',()=>{
             //removendo background transparente
             body.classList.remove('body-invisivel');
-
+            //removendo menu aberto
             for ( x = 0; x < cabecalhoItem.length; x++) {
                 cabecalhoItem[x].classList.remove('cabecalho-item-ativo');
               
