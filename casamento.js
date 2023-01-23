@@ -68,12 +68,29 @@ botaoCabecalhoMobile.addEventListener('click', function(){
     var body = document.querySelector('.body');
     body.classList.toggle('body-invisivel')
 
+//Adicionando função de remover menu ao clicar no elemento
+    cabecalhoItem.forEach(elemento => { 
+        elemento.addEventListener('click',()=>{
+            //removendo background transparente
+            body.classList.remove('body-invisivel');
+
+            for ( x = 0; x < cabecalhoItem.length; x++) {
+                cabecalhoItem[x].classList.remove('cabecalho-item-ativo');
+              
+              }
+        })
+    });
+    
+
 
 
 
     
 
 });
+
+
+
 
 // //Botão nossa história - ela aprimorado (tentativa)
 // var historiaEla = document.querySelectorAll('.historia-ela');
